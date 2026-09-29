@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTituloCreador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="@string/titulo_creador"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- 1. Nombre del guerrero -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_nombre"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/hint_nombre"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
+
+        <!-- 2. Raza -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_raza"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerRaza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- 3. Facción -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_faccion"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgFaccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbComunidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faccion_comunidad" />
+
+            <RadioButton
+                android:id="@+id/rbMordor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faccion_mordor" />
+
+        </RadioGroup>
+
+        <!-- 4. Habilidades especiales -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_habilidades"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbSigilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/habilidad_sigilo" />
+
+        <CheckBox
+            android:id="@+id/cbEspada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/habilidad_espada"
+            android:layout_marginBottom="28dp" />
+
+        <!-- 5. Botón de registro -->
+        <ImageButton
+            android:id="@+id/btnRegistrar"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:background="@android:drawable/btn_default"
+            android:contentDescription="@string/desc_btn_registrar"
+            android:padding="12dp"
+            android:src="@drawable/ic_escudo" />
+
+    </LinearLayout>
+
+</ScrollView>

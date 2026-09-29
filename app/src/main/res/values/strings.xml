@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">un_viaje_inesperado</string>
+
+    <!-- Navegación -->
+    <string name="btn_ir_creador">Entrar a la Forja del Héroe</string>
+
+    <!-- Creador de Personajes -->
+    <string name="titulo_creador">El Creador de Personajes de la Tierra Media</string>
+
+    <string name="label_nombre">Nombre del guerrero</string>
+    <string name="hint_nombre">Introduce el nombre de tu héroe</string>
+
+    <string name="label_raza">Raza</string>
+    <string-array name="razas_array">
+        <item>Hobbit</item>
+        <item>Elfo</item>
+        <item>Enano</item>
+        <item>Humano</item>
+    </string-array>
+
+    <string name="label_faccion">Facción</string>
+    <string name="faccion_comunidad">Comunidad del Anillo</string>
+    <string name="faccion_mordor">Huestes de Mordor</string>
+
+    <string name="label_habilidades">Habilidades especiales</string>
+    <string name="habilidad_sigilo">Sigilo</string>
+    <string name="habilidad_espada">Combate con Espada</string>
+
+    <string name="desc_btn_registrar">Registrar personaje</string>
+    <string name="toast_nombre_vacio">Debes introducir un nombre para tu guerrero</string>
+    <string name="toast_faccion_vacia">Debes elegir una facción</string>
+</resources>
